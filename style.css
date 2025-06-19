@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+}
+body{
+    background-color: #ffffff;
+}
+nav{
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0.2, 0.2, 0.2, 0.2);
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    margin-top: 30px;margin-left: 5rem;
+    float: inline-end;
+}
+
+nav a:hover{
+   color: rgb(230, 105, 105);
+}
+
+.logo{
+    
+}
+.logo img{
+    width: 3.5rem;
+    border-radius: 50%;
+}
+
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  /* border-right: 2px solid black; */
+  width: 0;
+  animation: typing 2s steps(25, end) infinite alternate, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 10ch; } 
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* CSS */
+.menu {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Hidden off-screen */
+  width: 250px;
+  height: 100vh;
+  background: #5e77f4; /* Your desired background color */
+  color: #fff;
+  list-style: none;
+  padding: 2rem 1rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+.menu.active {
+  right: 0; /* Slide in */
+}
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1100;
+}
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  nav a{
+    margin-top: 10vh;
+  }
+  .menu-bar{
+    display: none;
+  }
+  .gen-btn{
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+  
+}
+@media (min-width: 500px) {
+    .menu-bar{
+        display: block;
+    }
+    .menu-bar a{
+        color: black;
+        margin-top: 10vh;
+        margin-left: 3ch;
+        padding: 0.5rem 1rem;
+        display: block;
+    }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gen-btn{
+  padding-top: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-in forwards;
+}
+
