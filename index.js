@@ -1,4 +1,3 @@
-
 const menuToggle = document.getElementById('menuToggle');
 const menuContainer = document.getElementById('menuContainer');
 
@@ -21,7 +20,16 @@ function generateIslBoy(){
   "Fahad", "Imad", "Samiullah", "Harith", "Yunus", "Hashim", "Usama", "Irfan", "Jamal", "Miqdad",
   "Sabir", "Zeeshan", "Wasim", "Tameem", "Rashid", "Mustafa", "Ghaith", "Barirah", "Muaz", "Ashar"];
   const randomislName = names[Math.floor(Math.random() * names.length)];
-  document.getElementById("result").innerText = `✨ ${randomislName}`;
+  const cardHTML = `
+    <div class="result-card islamic">
+      <div class="card-content">
+        <span class="sparkle">✨</span>
+        <div class="name">${randomislName}</div>
+        <div class="card-subtitle">Islamic Boy Name</div>
+      </div>
+    </div>
+  `;
+  document.getElementById("result").innerHTML = cardHTML;
 }
 
 
@@ -35,7 +43,16 @@ function generateHinBoy(){
   "Jatin", "Kunal", "Lalit", "Mohit", "Nikhil", "Om", "Puneet", "Quadir", "Raghav", "Sahil",
   "Tarun", "Umesh", "Vikrant", "Waman"];
   const randomHinName = names[Math.floor(Math.random() * names.length)];
-  document.getElementById("result").innerText = `✨ ${randomHinName}`;
+  const cardHTML = `
+    <div class="result-card hindu">
+      <div class="card-content">
+        <span class="sparkle">✨</span>
+        <div class="name">${randomHinName}</div>
+        <div class="card-subtitle">Hindu Boy Name</div>
+      </div>
+    </div>
+  `;
+  document.getElementById("result").innerHTML = cardHTML;
 }
 
 function generateChrisBoy(){
@@ -47,7 +64,16 @@ function generateChrisBoy(){
   "Aaron", "Ezekiel", "Charles", "Connor", "Dominic", "Jaxson", "Hunter", "Cameron", "Santiago", "Jeremiah",
   "Evan", "Eli", "Jameson", "Easton", "Nathaniel", "Emmett", "Elliot", "Miles", "Sawyer", "Axel"];
   const randomChrisName = names[Math.floor(Math.random() * names.length)];
-  document.getElementById("result").innerText = `✨ ${randomChrisName}`;
+  const cardHTML = `
+    <div class="result-card christian">
+      <div class="card-content">
+        <span class="sparkle">✨</span>
+        <div class="name">${randomChrisName}</div>
+        <div class="card-subtitle">Christian Boy Name</div>
+      </div>
+    </div>
+  `;
+  document.getElementById("result").innerHTML = cardHTML;
 }
 
 
@@ -59,7 +85,16 @@ function generateSikhBoy(){
   "Lakhwinder", "Manjot", "Nishan", "Omveer", "Pritam", "Qasim", "Ranjit", "Sukhdeep", "Tajinder", "Umesh", "Vishal",
   "Wajid", "Xarvesh", "Yogesh", "Zorawar", "Aman", "Bikram", "Chirag", "Devinder", "Eshaan", "Firoz",];
   const randomSikhName = names[Math.floor(Math.random() * names.length)];
-  document.getElementById("result").innerText = `✨ ${randomSikhName}`;
+  const cardHTML = `
+    <div class="result-card sikh">
+      <div class="card-content">
+        <span class="sparkle">✨</span>
+        <div class="name">${randomSikhName}</div>
+        <div class="card-subtitle">Sikh Boy Name</div>
+      </div>
+    </div>
+  `;
+  document.getElementById("result").innerHTML = cardHTML;
 }
 
 
@@ -73,7 +108,16 @@ function generateIslGirl(){
 "AbdMariamah", "AbdMariamiyah", "AbdMariamiyyah", "AbdMariamina", "AbdMiriamira", "AbdNusaybah", "AbdNusaybahiya", "AbdNusaybat", "AbdNusaybiyah", "AbdNusaybiyyah", "AbdRuqayyah", "AbdRuqayyaiya", "AbdRuqayyat", "AbdRuqayyiyyah", "AbdRuqayyina", "AbdRuqayyira", "AbdSafiyyah", "AbdSafiyyahiya", "AbdSafiyyat", "AbdSafiyyina", "AbdSafiyyira", "AbdSalmaah", "AbdSalmaiyah", "AbdSalmaat", "AbdSalmayyah", "AbdSalmaina", "AbdSalmaira", "AbdShaheemah", "AbdShaheemiya", "AbdShaheemiyyah", "AbdShaheemina", "AbdShaheemira", "AbdSuhailah", "AbdSuhailaiya", "AbdSuhailat", "AbdSuhailiyyah", "AbdSuhailina", "AbdSuhailira", "AbdSumayyah", "AbdSumayyahiya", "AbdSumayyiyyah", "AbdSumayyina", "AbdSumayyira", "AbdYasminah", "AbdYasminiyah", "AbdYasminiyyah", "AbdYasminina", "AbdYasminira",
 "AbdZainabah", "AbdZainabiyah", "AbdZainabiyyah", "AbdZainabina", "AbdZainabira", "AlAaliyaha", "AlAaliyahiyah", "AlAaliyahiyyah", "AlAaliyahat", "AlAaliyaheen", "AlAaliyahina", "AlAaliyahira", "AlAminaah", "AlAminaiya", "AlAminah", "AlAminat", "AlAminiyah", "AlAminiyyah", "AlAsmaeen", "AlAsmaeenah", "AlAsmaiira", "AlFatimaa", "AlFatimaah", "AlFatimah", "AlFatimat", "AlFatimiyyah", "AlFatimina", "AlFatimira", "AlHafsaiya", "AlHafsah", "AlHafsat", "AlHafsiyyah", "AlHafsina", "AlHafsira", "AlKhadijaha", "AlKhadijahiyah", "AlKhadijahiyyah", "AlKhadijahina", "AlKhadijahira", "AlLaylaah", "AlLaylaiya", "AlLaylatah", "AlLaylina", "AlLaylira", "AlLubnaah", "AlLubnayah", "AlLubnina", "AlLubnira", "AlMaryamah", "AlMaryamaiya", "AlMaryamat", "AlMaryamiyya"];
   const randomislName = names[Math.floor(Math.random() * names.length)];
-  document.getElementById("result").innerText = `✨ ${randomislName}`;
+  const cardHTML = `
+    <div class="result-card islamic">
+      <div class="card-content">
+        <span class="sparkle">✨</span>
+        <div class="name">${randomislName}</div>
+        <div class="card-subtitle">Islamic Girl Name</div>
+      </div>
+    </div>
+  `;
+  document.getElementById("result").innerHTML = cardHTML;
 }
 
 
@@ -116,7 +160,16 @@ function generateHinGirl(){
 "DeviSaanlakshmipriya", "DeviSaraswatishree", "DeviShalinipriya", "DeviSitapriya", "DeviSujayashree",
 "DeviTanvishree", "DeviUmajaya", "DeviVaishnavivani", "DeviYamunashree", "DeviZeenatshree"];
   const randomHinName = names[Math.floor(Math.random() * names.length)];
-  document.getElementById("result").innerText = `✨ ${randomHinName}`;
+  const cardHTML = `
+    <div class="result-card hindu">
+      <div class="card-content">
+        <span class="sparkle">✨</span>
+        <div class="name">${randomHinName}</div>
+        <div class="card-subtitle">Hindu Girl Name</div>
+      </div>
+    </div>
+  `;
+  document.getElementById("result").innerHTML = cardHTML;
 }
 
 function generateChrisGirl(){
@@ -159,7 +212,16 @@ function generateChrisGirl(){
 "GraceMadonella", "HopeMariselle", "ChristNeoma", "AnnEvodia", "JoEpiphania", "MaryGratiana", "ElGlorya",
 "FaithLumena", "GraceTrinelle", "HopeCelessa", "AnnMiracla", "JoEulalia", "MaryPaxina", "FaithHarmonia"];
   const randomChrisName = names[Math.floor(Math.random() * names.length)];
-  document.getElementById("result").innerText = `✨ ${randomChrisName}`;
+  const cardHTML = `
+    <div class="result-card christian">
+      <div class="card-content">
+        <span class="sparkle">✨</span>
+        <div class="name">${randomChrisName}</div>
+        <div class="card-subtitle">Christian Girl Name</div>
+      </div>
+    </div>
+  `;
+  document.getElementById("result").innerHTML = cardHTML;
 }
 
 
@@ -191,7 +253,16 @@ function generateSikhGirl(){
 "Gurleen", "Harjot", "Manpreet", "Simdeep", "Navjot", "Rajkamal", "Sukhjeet", "Balkamal", "Jasleen", "Amnoor",
 "Gurkamal", "Harsimar", "Manjinder", "Simran", "Navkamal", "Rajnoor", "Sukhkamal", "Balnoor", "Jasnoor", "Amjot"];
   const randomSikhName = names[Math.floor(Math.random() * names.length)];
-  document.getElementById("result").innerText = `✨ ${randomSikhName}`;
+  const cardHTML = `
+    <div class="result-card sikh">
+      <div class="card-content">
+        <span class="sparkle">✨</span>
+        <div class="name">${randomSikhName}</div>
+        <div class="card-subtitle">Sikh Girl Name</div>
+      </div>
+    </div>
+  `;
+  document.getElementById("result").innerHTML = cardHTML;
 }
 
 
@@ -235,21 +306,45 @@ function generateEcomName(){
   "EasyBazaarlux", "EasyBuyloop", "EasyCartmint", "EasyClickora", "EasyCraftzone",
   "EasyNestscape", "EasyPicklane", "EasyStoreloop", "EcoBazaarify", "EcoBuytail",
   "EcoCartloop", "EcoClicklane", "EcoCraftlux", "EcoNestzone", "EcoStoreora",
-  "FastBazaario", "FastBuylane", "FastCartlux", "FastClickzone", "FastCraftloop",
-  "FastNestora", "FastStoremint", "FreshBoxlane", "FreshBuyora", "FreshCartloop",
-  "FreshClicklux", "FreshCraftora", "FreshNestmint", "FreshPickloop", "GoBoxlux",
-  "GoCartzone", "GoCraftora", "GoDepotloop", "GoNestlane", "GoPickmint", "GoStoretail",
-  "HyperBazaarlux", "HyperBuylane", "HyperCartora", "HyperClickmint", "HyperCraftzone",
-  "HyperNestloop", "MegaBazaarify", "MegaBuyloop", "MegaCartmint", "MegaClickora",
-  "MegaCraftlane", "MegaNestzone", "NeoBazaarlux", "NeoBuylane", "NeoCartora",
-  "NeoClickloop", "NeoCraftmint", "NeoNestlane", "NextBazaarloop", "NextBuyora",
-  "NextCartmint", "NextCraftlux", "NextNestlane", "PrimeBazaarora", "PrimeBuyzone",
-  "PrimeCartloop", "PrimeCraftmint", "PrimeNestora", "QuickBoxlane", "QuickBuyora",
-  "QuickCartloop", "QuickCraftmint", "QuickNestlane", "ShopBazaarlux", "ShopBuyloop",
-  "ShopCartmint", "ShopCraftora", "ShopNestzone","Shopify", "EcomHub", "MarketMingle", "CartCrafter", "TradeTrove", "CommerceCove", "RetailRealm", "BazaarBuddy", "BuyBox", "EcomEssence",
+  "FastBazaarify", "FastBuyloop", "FastCartora", "FastCraftzone", "FastDropmint",
+  "FastNestloop", "FastPicktail", "FastStorelane", "FreshBazaarlux", "FreshBuyloop",
+  "FreshCartmint", "FreshClickora", "FreshCraftzone", "FreshNestscape", "FreshPicklane",
+  "FreshStoreloop", "GoBazaarify", "GoBuytail", "GoCartloop", "GoClicklane", "GoCraftlux",
+  "GoNestzone", "GoStoreora", "HyperBazaarify", "HyperBuyloop", "HyperCartora",
+  "HyperCraftzone", "HyperDropmint", "HyperNestloop", "HyperPicktail", "HyperStorelane",
+  "MegaBazaarlux", "MegaBuyloop", "MegaCartmint", "MegaClickora", "MegaCraftzone",
+  "MegaNestscape", "MegaPicklane", "MegaStoreloop", "NeoBazaarify", "NeoBuytail",
+  "NeoCartloop", "NeoClicklane", "NeoCraftlux", "NeoNestzone", "NeoStoreora",
+  "NextBazaarify", "NextBuyloop", "NextCartora", "NextCraftzone", "NextDropmint",
+  "NextNestloop", "NextPicktail", "NextStorelane", "PrimeBazaarlux", "PrimeBuyloop",
+  "PrimeCartmint", "PrimeClickora", "PrimeCraftzone", "PrimeNestscape", "PrimePicklane",
+  "PrimeStoreloop", "QuickBazaarify", "QuickBuytail", "QuickCartloop", "QuickClicklane",
+  "QuickCraftlux", "QuickNestzone", "QuickStoreora", "ShopBazaarify", "ShopBuyloop",
+  "ShopCartora", "ShopCraftzone", "ShopDropmint", "ShopNestloop", "ShopPicktail",
+  "ShopStorelane", "SmartBazaarlux", "SmartBuyloop", "SmartCartmint", "SmartClickora",
+  "SmartCraftzone", "SmartNestscape", "SmartPicklane", "SmartStoreloop", "SnapBazaarify",
+  "SnapBuytail", "SnapCartloop", "SnapClicklane", "SnapCraftlux", "SnapNestzone",
+  "SnapStoreora", "StyleBazaarify", "StyleBuyloop", "StyleCartora", "StyleCraftzone",
+  "StyleDropmint", "StyleNestloop", "StylePicktail", "StyleStorelane", "TrendBazaarlux",
+  "TrendBuyloop", "TrendCartmint", "TrendClickora", "TrendCraftzone", "TrendNestscape",
+  "TrendPicklane", "TrendStoreloop", "TrueBazaarify", "TrueBuytail", "TrueCartloop",
+  "TrueClicklane", "TrueCraftlux", "TrueNestzone", "TrueStoreora", "UrbanBazaarify",
+  "UrbanBuyloop", "UrbanCartora", "UrbanCraftzone", "UrbanDropmint", "UrbanNestloop",
+  "UrbanPicktail", "UrbanStorelane", "ZenBazaarlux", "ZenBuyloop", "ZenCartmint",
+  "ZenClickora", "ZenCraftzone", "ZenNestscape", "ZenPicklane", "ZenStoreloop",
+  "MarketMingle", "CartCrafter", "TradeTrove", "CommerceCove", "RetailRealm", "BazaarBuddy", "BuyBox", "EcomEssence",
   "ShopSphere", "MarketMakers", "CartConnect", "TradeTrail", "CommerceCorner", "RetailRendezvous", "BazaarBliss", "BuyBazaar", "EcomEmporium", "ShopSavvy"];
   const randomEcomName = names[Math.floor(Math.random() * names.length)];
-  document.getElementById("result").innerText = `✨ ${randomEcomName}`;
+  const cardHTML = `
+    <div class="result-card startup">
+      <div class="card-content">
+        <span class="sparkle">✨</span>
+        <div class="name">${randomEcomName}</div>
+        <div class="card-subtitle">E-commerce Business Name</div>
+      </div>
+    </div>
+  `;
+  document.getElementById("result").innerHTML = cardHTML;
 }
 
 
@@ -271,7 +366,16 @@ function generateEduName(){
   "EduEdge", "LearnLabyrinth", "SkillSkyline", "KnowledgeNook", "AcademyAlley", "StudySail",
   "TutorTrack", "ScholarSail"];
   const randomEduName = names[Math.floor(Math.random() * names.length)];
-  document.getElementById("result").innerText = `✨ ${randomEduName}`;
+  const cardHTML = `
+    <div class="result-card startup">
+      <div class="card-content">
+        <span class="sparkle">✨</span>
+        <div class="name">${randomEduName}</div>
+        <div class="card-subtitle">Education Business Name</div>
+      </div>
+    </div>
+  `;
+  document.getElementById("result").innerHTML = cardHTML;
 }
 
 
@@ -292,7 +396,16 @@ function generateHealthName(){
   "HealthHorizon", "WellnessWharf", "VitalityVoyage", "FitForge", "CareCrest", "HealHearth", "NourishNestle", "ThriveThicket", "BalanceBliss",
   "ReviveRetreat","HealthHub","WellnessWorld","VitalityVillage","FitFusion","CareConnect","HealHarmony","NourishNetwork","ThriveTemple","BalanceBounty"];
   const randomHealthName = names[Math.floor(Math.random() * names.length)];
-  document.getElementById("result").innerText = `✨ ${randomHealthName}`;
+  const cardHTML = `
+    <div class="result-card startup">
+      <div class="card-content">
+        <span class="sparkle">✨</span>
+        <div class="name">${randomHealthName}</div>
+        <div class="card-subtitle">Health & Wellness Business Name</div>
+      </div>
+    </div>
+  `;
+  document.getElementById("result").innerHTML = cardHTML;
 }
 
 
@@ -305,7 +418,16 @@ function generateGameName(){
   "ArcaneAlley","CyberCity","DragonDomain","MysticMeadow","HeroicHaven","CosmicCove","EpicExpanse","LegendaryLands","FantasyFrontier","ShadowShire",
   "GalacticGrove","ArcaneArchipelago","CyberCanyon","DragonDunes","MysticMountain","HeroicHarbor","CosmicCradle"];
   const randomGameName = names[Math.floor(Math.random() * names.length)];
-  document.getElementById("result").innerText = `✨ ${randomGameName}`;
+  const cardHTML = `
+    <div class="result-card startup">
+      <div class="card-content">
+        <span class="sparkle">✨</span>
+        <div class="name">${randomGameName}</div>
+        <div class="card-subtitle">Gaming Business Name</div>
+      </div>
+    </div>
+  `;
+  document.getElementById("result").innerHTML = cardHTML;
 }
 
 
@@ -316,8 +438,8 @@ function generateGameName(){
 function generateFastFoodName(){
   const names = ["Burger Blitz", "FryZone", "Chick Stack", "Snack Shack", "BunFuel",
   "Zesty Bites", "Fry Factory", "Grillzilla", "Sizzle Stop", "Patty Express",
-  "WrapRush", "BiteBox", "Tasty Drive", "YumRush", "Crunch N’ Go",
-  "Speedy Munch", "ZipBuns", "SnackWhirl", "Flamin’ Fries", "FastFeast",
+  "WrapRush", "BiteBox", "Tasty Drive", "YumRush", "Crunch N' Go",
+  "Speedy Munch", "ZipBuns", "SnackWhirl", "Flamin' Fries", "FastFeast",
   "CraveCrush", "Fry Frenzy", "TurboTaco", "The Grub Lab", "DriveBite",
   "Meat & Munch", "ZoomBurger", "GoGrill", "Toasty Tots", "ZipEats",
   "MunchHub", "BurgerBeast", "FastBite Spot", "QuickChow", "FryHop",
@@ -328,7 +450,16 @@ function generateFastFoodName(){
   "BurgerBistro", "PizzaPavilion", "TacoTerrace", "SushiShed", "WrapWarehouse", "FryFactory", "SaladStation", "WingsWharf", "NoodleNook", "SnackSpot",
   "BiteBistro", "GrillGarden", "DeliDomain", "ChiliChamber", "PastaPlace", "CurryCove","FastFoodFusion","QuickCuisine","SpeedySnacks","RapidRecipes","SwiftEats","ExpressEateries","TurboTastes","BlitzBites","FlashFeasts","ZippyZest"];
   const randomFastFoodName = names[Math.floor(Math.random() * names.length)];
-  document.getElementById("result").innerText = `✨ ${randomFastFoodName}`;
+  const cardHTML = `
+    <div class="result-card restaurant">
+      <div class="card-content">
+        <span class="sparkle">✨</span>
+        <div class="name">${randomFastFoodName}</div>
+        <div class="card-subtitle">Fast Food Restaurant Name</div>
+      </div>
+    </div>
+  `;
+  document.getElementById("result").innerHTML = cardHTML;
 }
 
 
@@ -354,7 +485,16 @@ function generateCafeName(){
   "BeanieBliss","SipSanctuary","CoffeeCove","MugMeadow","PerkPark","RoastRidge","CaffeineCreek","SteamyStream","BrewedBrook","CupCove",
   "BeanieBay","SipShore","CoffeeCliff","MugMountain","PerkPeak","RoastRiver"];
   const randomCafeName = names[Math.floor(Math.random() * names.length)];
-  document.getElementById("result").innerText = `✨ ${randomCafeName}`;
+  const cardHTML = `
+    <div class="result-card restaurant">
+      <div class="card-content">
+        <span class="sparkle">✨</span>
+        <div class="name">${randomCafeName}</div>
+        <div class="card-subtitle">Café Business Name</div>
+      </div>
+    </div>
+  `;
+  document.getElementById("result").innerHTML = cardHTML;
 }
 
 
@@ -379,28 +519,46 @@ function generateTruckName(){
   "RollingRestaurant","NomadNosh","WanderWagon","StreetSavor","RoamingRepast","UrbanUtopia","MobileMunchies","CurbsideCuisine","FoodieFiesta","SavorySojourn",
   "TasteTrek","FlavorFleet","EpicureanEats","GastronomeGrove","BiteBoulevard","CuisineCruiser","SnackShuttle"];
   const randomTruckName = names[Math.floor(Math.random() * names.length)];
-  document.getElementById("result").innerText = `✨ ${randomTruckName}`;
+  const cardHTML = `
+    <div class="result-card restaurant">
+      <div class="card-content">
+        <span class="sparkle">✨</span>
+        <div class="name">${randomTruckName}</div>
+        <div class="card-subtitle">Food Truck Name</div>
+      </div>
+    </div>
+  `;
+  document.getElementById("result").innerHTML = cardHTML;
 }
 
 
 function generateDriveName(){
   const names = ["Drive & Dine", "Retro Bites", "Cruise & Chow", "Sizzle Stop", "The Burger Lot",
   "CarHop Café", "The Drive-Up Diner", "Wheelie Good Eats", "Flash Feast", "MotorGrub",
-  "Park n’ Bite", "Vroom Eats", "Cruisin’ Kitchen", "Grease & Grill", "Bumper Bites",
+  "Park n' Bite", "Vroom Eats", "Cruisin' Kitchen", "Grease & Grill", "Bumper Bites",
   "The Pit Stop", "DriveThru Deli", "Dash Diner", "Auto Munch", "Roll-Up Eats",
-  "Burger Boulevard", "The Retro Ride-In", "Slide & Dine", "Steer ‘n’ Snack", "Highway Hunger",
+  "Burger Boulevard", "The Retro Ride-In", "Slide & Dine", "Steer 'n' Snack", "Highway Hunger",
   "Fuel Station Grill", "Wheely Tasty", "Quick Wheel Bites", "Zoom Chow", "Eat 'n' Idle",
   "Vintage Buns", "Pop Stop Drive-In", "Grill Lane", "Overdrive Diner", "Fast Track Eats",
   "ChowWheels", "The Munch Meter", "DriveThru Delight", "AutoFuel Bites", "Rider's Rest Stop",
   "Meal Motion", "RushBite Drive-In", "CruiseBite Café", "Hot Lap Grill", "Roadside Munch",
-  "Burgers & Bumpers", "DriveSnack Express", "Dash n’ Dine", "Ignite Grill", "RoadGrub","DriveSphere", "DriveVerse", "DriveHub", "DriveWorld", "DriveLane",
+  "Burgers & Bumpers", "DriveSnack Express", "Dash n' Dine", "Ignite Grill", "RoadGrub","DriveSphere", "DriveVerse", "DriveHub", "DriveWorld", "DriveLane",
   "DriveBay", "DriveZone", "DriveNest", "DrivePoint", "DriveStream",
   "DriveNest", "DriveBase", "DriveField", "DriveCove", "DriveHarbor",
   "DriveHaven", "DriveOasis", "DriveSanctuary", "DriveRetreat", "DriveRealm",
   "DriveVista", "DriveVista", "DriveVista", "DriveVista", "DriveVista",
   "DriveVista", "DriveVista", "DriveVista", "DriveVista", "DriveVista"];
   const randomName = names[Math.floor(Math.random() * names.length)];
-  document.getElementById("result").innerText = `✨ ${randomName}`;
+  const cardHTML = `
+    <div class="result-card restaurant">
+      <div class="card-content">
+        <span class="sparkle">✨</span>
+        <div class="name">${randomName}</div>
+        <div class="card-subtitle">Drive-In Restaurant Name</div>
+      </div>
+    </div>
+  `;
+  document.getElementById("result").innerHTML = cardHTML;
 }
 
 
@@ -425,7 +583,7 @@ function generateTechName(){
   "Brightware", "NextIQ", "NovaByte", "AIField", "CloudBolt", "PixelSynapse", "MindCore", "DataPulse", "CoreVision", "QuantumThread",
   "ByteCrate", "NeuralNest", "CodeDrive", "Innovera", "MetaSpark", "BrightCode", "TechVista", "CorePulse", "Zerolink", "SkyChain",
   "BotNova", "CloudNestIQ", "DigitalMind", "BrightShift", "InfinoBit", "NextNode", "CodeTide", "BitLift", "AIForge", "SkyNest",
-  "QuantumWorks", "NetAI", "BrightNest", "DataGlow", "CodeRoot", "CircuitWave", "CoreIQ", "NeuroByte", "CloudRamp", "PixelShift",
+  "QuantumWorks", "NetAI", "BrightNest", "DataGlow", "CodeRoot", "CircuitWave",
   "CyberThread", "LogiNest", "NovaWave", "CodeNest", "DataCortex", "InfinoTech", "LogicSpark", "FusionIQ", "BitNexus", "MindwareX",
   "AIForgeX", "NextCloud", "SkyBot", "BrightPath", "NeuralGlow", "SparkByte", "CloudTree", "QuantumNest", "MetaByte", "CodeFusion",
   "LogiSoft", "Innovex", "CoreTrek", "NexWorx", "ByteTrail", "SkyBox", "DataCrate", "DigitalIQ", "BrightLogic", "VoltNest",
@@ -443,7 +601,16 @@ function generateTechName(){
   "GigaNest", "GigaBase", "GigaField", "GigaCove", "GigaHarbor",
   "GigaHaven"];
   const randomName = names[Math.floor(Math.random() * names.length)];
-  document.getElementById("result").innerText = `✨ ${randomName}`;
+  const cardHTML = `
+    <div class="result-card company">
+      <div class="card-content">
+        <span class="sparkle">✨</span>
+        <div class="name">${randomName}</div>
+        <div class="card-subtitle">Technology Company Name</div>
+      </div>
+    </div>
+  `;
+  document.getElementById("result").innerHTML = cardHTML;
 }
 
 
@@ -479,31 +646,23 @@ function generateTradingName(){
   "MarketBay", "MarketZone", "MarketNest", "MarketPoint", "MarketStream",
   "MarketNest", "MarketBase", "MarketField", "MarketCove","CommerceSphere","CommerceVerse","CommerceHub","CommerceWorld","CommerceLane"];
   const randomName = names[Math.floor(Math.random() * names.length)];
-  document.getElementById("result").innerText = `✨ ${randomName}`;
+  const cardHTML = `
+    <div class="result-card company">
+      <div class="card-content">
+        <span class="sparkle">✨</span>
+        <div class="name">${randomName}</div>
+        <div class="card-subtitle">Trading Company Name</div>
+      </div>
+    </div>
+  `;
+  document.getElementById("result").innerHTML = cardHTML;
 }
 
 
 
 function generateManufacturingName(){
-  const names = ["PrimeForge Industries", "SteelCore Manufacturing", "FlexiMek", "IronNest Works", "BrightBolt Industries",
-  "MetaMakers", "CoreEdge Manufacturing", "TrueForm Tech", "NextGen Manufacturing", "QuantumForge Ltd",
-  "AlloyWorks", "CraftMetals", "PrecisionPlus", "NeoMach Industries", "VertexFab", "SolidLine Manufacturing",
-  "ApexMakers", "Structura Industries", "SwiftSteel", "ForgeRise", "MetroMek", "BuildAxis", "EverMek Solutions",
-  "NovaSteel Works", "TitanForge Ltd", "EliteCraft Manufacturing", "GlobeMach", "IronTrail Industries",
-  "Nexen Fabricators", "BlueForge Co", "Machinex Corp", "BoldEdge Manufacturing", "TrueSteel Industries",
-  "InnoFab Systems", "ProMetal Works", "CraftEdge Industries", "MetalVibe", "PureMach Solutions",
-  "UrbanFoundry", "PeakForge Manufacturing", "SteelBay Fabricators", "SmartFab", "NexCore Machining",
-  "SolidMek", "BrightMetal Industries", "CoreShift Manufacturing", "GlobalForge", "AlliedFab",
-  "MachinaTech", "AxonMek", "VisionSteel", "ZenithMakers", "FusionFab", "InstaBuild", "AlloyAxis",
-  "PulseMek Industries", "MetaCraft Co", "TrueBuild Tech", "SteelPoint Fabrication", "BrightEdge Works",
-  "IndustrialNova", "MachForge", "GearCore Industries", "DeltaBuild", "FoundryLine", "CraftMotion",
-  "MekTronix", "AlloyGrid", "StructureWise", "PrimeCast Industries", "BoltCraft", "ForgeMind Ltd",
-  "BrightMek", "NextSteel Fabricators", "BlueMach Tech", "UrbanForge", "MetalNest Systems",
-  "SolidAxis Manufacturing", "CastX Industries", "MekHive", "EdgeForge", "MetaTron Industries",
-  "IronPeak Co", "TrueMek Works", "WeldWise", "RapidFab", "NovaBuild", "VisionMakers", "WeldStar",
-  "CoreCraft Ltd", "SteelStruct Systems", "GearShift Manufacturing", "AlliedSteel Works", "MetaLine Fab",
-  "CraftNest", "NexFab Industries", "BoltMakers", "IronStruct", "MachinoCore", "Formwise Industries",
-  "UnityFab", "BuildX Corp", "PulseForge", "SolidPeak Manufacturing", "NextEdge Fabricators",
+  const names = [
+  "NextEdge Fabricators",
   "CastCore Co", "PrecisionBuild", "BrightStruct", "IronLogic Ltd", "VertexFabTech", "HexaMek",
   "BuildNest", "ForgeLink Industries", "CoreCast Manufacturing", "MachWise", "BlueSteel Co",
   "AlloyPrime", "CraftCore Ltd", "TrueWeld", "PeakSteel Fabricators", "Machinova", "UrbanBuild Corp",
@@ -523,8 +682,17 @@ function generateManufacturingName(){
   "NeoWeld Systems", "PrecisionEdge Ltd", "UrbanStruct", "ForgeLogic", "WeldLine", "SteelWise Works",
   "PulseBuild", "MachForm", "RapidForge", "VertexMek", "CastWise", "TrueForm Foundry", "IronBright",];
   const randomName = names[Math.floor(Math.random() * names.length)];
-  document.getElementById("result").innerText = `✨ ${randomName}`;
-  };
+  const cardHTML = `
+    <div class="result-card company">
+      <div class="card-content">
+        <span class="sparkle">✨</span>
+        <div class="name">${randomName}</div>
+        <div class="card-subtitle">Manufacturing Company Name</div>
+      </div>
+    </div>
+  `;
+  document.getElementById("result").innerHTML = cardHTML;
+}
 
 
 
@@ -549,5 +717,14 @@ function generateManufacturingName(){
   "PrecisionCraft", "AxonForge", "TitanWeld", "WeldCraft Industries", "SteelLink Fabricators",
   "FormBright Ltd", "SmartFab", "WeldCore", "BuildNest", "ForgeNova", "BrightMek", "SteelNest","BuildNest", "ConstructCore", "UrbanForge", "Skyline Builders", "SolidCraft",];
   const randomName = names[Math.floor(Math.random() * names.length)];
-  document.getElementById("result").innerText = `✨ ${randomName}`;
-  }
+  const cardHTML = `
+    <div class="result-card company">
+      <div class="card-content">
+        <span class="sparkle">✨</span>
+        <div class="name">${randomName}</div>
+        <div class="card-subtitle">Construction Company Name</div>
+      </div>
+    </div>
+  `;
+  document.getElementById("result").innerHTML = cardHTML;
+}
